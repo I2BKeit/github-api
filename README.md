@@ -1,13 +1,9 @@
-# github-api
-    #!/bin/bash
-
-
-       USERNAME=""
-       TOKEN=""
+ USERNAME=""
+  TOKEN=""
 
 
 
-
+~
 # Make an API request to fetch your repositories
 repos_info=$(curl -s -u "$USERNAME:$TOKEN" https://api.github.com/user/repos)
 
