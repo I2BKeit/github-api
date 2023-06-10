@@ -10,7 +10,6 @@ repos_info=$(curl -s -u "$USERNAME:$TOKEN" https://api.github.com/user/repos)
 # Print the retrieved repository information
 echo "Repositories:"
 echo "$repos_info"
-
 # Loop through each repository to fetch branches
 repo_names=$(echo "$repos_info" | jq -r '.[].name')
 
